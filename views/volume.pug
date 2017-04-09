@@ -1,0 +1,8 @@
+html
+  head
+  body
+    for res in qres
+      -var number=res.binding[0].uri
+      a(href='/number?uri='+number)
+        =res.binding[0].uri
+      br
