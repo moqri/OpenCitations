@@ -1,8 +1,0 @@
-html
-  head
-  body
-    for res in qres
-      -var volume=res.binding[0].uri
-      a(href='/volume?uri='+volume)
-        =res.binding[0].uri
-      br
